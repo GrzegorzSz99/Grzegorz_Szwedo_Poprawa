@@ -1,0 +1,29 @@
+/*! \mainpage Zaliczenie z przedmiotu Zarządzanie Przedsięwzięciami Informatycznymi
+ *
+ * \section intro_sec Dokumentacja 
+ *
+ * Dokumentacja obejmuje temat związany z obliczaniem ciągów matematycznych oraz rozkładem Studenta.
+ *
+ * Zawiera klasę Sequence i Statistics, które posiadają metody związane z powyższym tematem.
+ *
+ * 
+ */
+
+/*! \mainpage A simple manual
+
+Some general info.
+
+This manual is divided in the following sections:
+- \subpage intro
+- \subpage advanced "Advanced usage"
+*/
+
+
+/*! \page page1 Ciągi matematyczne
+  
+  
+*/
+ 
+/*! \page page2 Rozkład Studenta
+  
+*/

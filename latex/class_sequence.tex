@@ -1,0 +1,207 @@
+\hypertarget{class_sequence}{}\doxysection{Sequence Class Reference}
+\label{class_sequence}\index{Sequence@{Sequence}}
+
+
+Klasa do obliczania ciągów.  
+
+
+
+
+{\ttfamily \#include $<$Sequence.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sequence_a532b7e8df6ff6b2f990c14ae97859ca2}\label{class_sequence_a532b7e8df6ff6b2f990c14ae97859ca2}} 
+{\bfseries Sequence} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sequence_a8b38b0be5b5a62ec65b877c9a4e2faeb}{Sequence}} (const \mbox{\hyperlink{class_sequence}{Sequence}} \&other)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}{$\sim$\+Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_a7914407b122eb05f839a8024594d3f80}{First\+Integral}} (const std\+::vector$<$ double $>$ \&sequence)
+\begin{DoxyCompactList}\small\item\em Metoda wykorzystana do obliczenia pierwszej całki ciągu. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_acc24a45c7eceaa5d12e142a19e3ff2e2}{Second\+Integral}} (const std\+::vector$<$ double $>$ \&sequence)
+\begin{DoxyCompactList}\small\item\em Metoda wykorzystana do obliczenia drugiej całki ciągu. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_a0209e4fab6cd2505aa9dd7fc616f5a7a}{get\+First\+Integral}} () const
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość pierwszej całki. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_a4074950280cf85c916fae095c4db3f42}{get\+Second\+Integral}} () const
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość drugiej całki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sequence_a81cf4865625797693e54c02ece7ee111}{set\+First\+Integral}} (double first\+Integral)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawia wartość pierwszej całki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sequence_a28f0e923dbeb64319721d2fd70482807}{set\+Second\+Integral}} (double second\+Integral)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawia wartość drugiej całki. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sequence_a086be6a2225abf39f8bb5c0f516bc63e}{Zintegral}} (double a, double b, int n, std\+::function$<$ double(double)$>$ f)
+\begin{DoxyCompactList}\small\item\em Funkcja oblicza skomplikowaną całkę. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa do obliczania ciągów. 
+
+Klasa {\ttfamily \mbox{\hyperlink{class_sequence}{Sequence}}} zawiera metody do obliczania ciągów matematycznych. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sequence_a8b38b0be5b5a62ec65b877c9a4e2faeb}\label{class_sequence_a8b38b0be5b5a62ec65b877c9a4e2faeb}} 
+\index{Sequence@{Sequence}!Sequence@{Sequence}}
+\index{Sequence@{Sequence}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{Sequence()}{Sequence()}}
+{\footnotesize\ttfamily Sequence\+::\+Sequence (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sequence}{Sequence}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Konstruktor kopiujący. 
+
+Tworzy nową sekwencję, która jest kopią podanej sekwencji. \mbox{\Hypertarget{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}\label{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}} 
+\index{Sequence@{Sequence}!````~Sequence@{$\sim$Sequence}}
+\index{````~Sequence@{$\sim$Sequence}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sequence()}{~Sequence()}}
+{\footnotesize\ttfamily Sequence\+::$\sim$\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+Usuwa sekwencję i zwalnia pamięć. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sequence_a7914407b122eb05f839a8024594d3f80}\label{class_sequence_a7914407b122eb05f839a8024594d3f80}} 
+\index{Sequence@{Sequence}!FirstIntegral@{FirstIntegral}}
+\index{FirstIntegral@{FirstIntegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{FirstIntegral()}{FirstIntegral()}}
+{\footnotesize\ttfamily Sequence\+::\+First\+Integral (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{sequence }\end{DoxyParamCaption})}
+
+
+
+Metoda wykorzystana do obliczenia pierwszej całki ciągu. 
+
+Metoda {\ttfamily First\+Integral} oblicza pierwszą całkę dla podanego ciągu i zwraca wynik. Wzór pierwszej całki to\+:
+
+\[
+\int_{a}^{b} f(x) dx
+\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & Ciąg do obliczenia pierwszej całki. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wynik pierwszej całki dla podanego ciągu.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sequence_a0209e4fab6cd2505aa9dd7fc616f5a7a}\label{class_sequence_a0209e4fab6cd2505aa9dd7fc616f5a7a}} 
+\index{Sequence@{Sequence}!getFirstIntegral@{getFirstIntegral}}
+\index{getFirstIntegral@{getFirstIntegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{getFirstIntegral()}{getFirstIntegral()}}
+{\footnotesize\ttfamily Sequence\+::get\+First\+Integral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Funkcja zwraca wartość pierwszej całki. 
+
+Zwraca wartość pierwszej całki.
+
+Metoda {\ttfamily get\+First\+Integral} zwraca wartość pierwszej całki obliczonej dla ciągu.
+
+\begin{DoxyReturn}{Returns}
+Wartość pierwszej całki.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sequence_a4074950280cf85c916fae095c4db3f42}\label{class_sequence_a4074950280cf85c916fae095c4db3f42}} 
+\index{Sequence@{Sequence}!getSecondIntegral@{getSecondIntegral}}
+\index{getSecondIntegral@{getSecondIntegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{getSecondIntegral()}{getSecondIntegral()}}
+{\footnotesize\ttfamily Sequence\+::get\+Second\+Integral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Funkcja zwraca wartość drugiej całki. 
+
+Zwraca wartość drugiej całki.
+
+Metoda {\ttfamily get\+Second\+Integral} zwraca wartość drugiej całki obliczonej dla ciągu.
+
+\begin{DoxyReturn}{Returns}
+Wartość drugiej całki.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sequence_acc24a45c7eceaa5d12e142a19e3ff2e2}\label{class_sequence_acc24a45c7eceaa5d12e142a19e3ff2e2}} 
+\index{Sequence@{Sequence}!SecondIntegral@{SecondIntegral}}
+\index{SecondIntegral@{SecondIntegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{SecondIntegral()}{SecondIntegral()}}
+{\footnotesize\ttfamily Sequence\+::\+Second\+Integral (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{sequence }\end{DoxyParamCaption})}
+
+
+
+Metoda wykorzystana do obliczenia drugiej całki ciągu. 
+
+Oblicza drugą całkę dla ciągu.
+
+Metoda {\ttfamily Second\+Integral} oblicza drugą całkę dla podanego ciągu i zwraca wynik. Wzór drugiej całki to\+:
+
+\[
+\int_{a}^{b} \int_{c}^{d} f(x, y) dx dy
+\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & Ciąg do obliczenia drugiej całki. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wynik drugiej całki dla podanego ciągu.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sequence_a81cf4865625797693e54c02ece7ee111}\label{class_sequence_a81cf4865625797693e54c02ece7ee111}} 
+\index{Sequence@{Sequence}!setFirstIntegral@{setFirstIntegral}}
+\index{setFirstIntegral@{setFirstIntegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{setFirstIntegral()}{setFirstIntegral()}}
+{\footnotesize\ttfamily Sequence\+::set\+First\+Integral (\begin{DoxyParamCaption}\item[{double}]{first\+Integral }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawia wartość pierwszej całki. 
+
+Ustawia wartość pierwszej całki.
+
+Metoda {\ttfamily set\+First\+Integral} ustawia wartość pierwszej całki dla danego ciągu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Integral} & Wartość pierwszej całki.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sequence_a28f0e923dbeb64319721d2fd70482807}\label{class_sequence_a28f0e923dbeb64319721d2fd70482807}} 
+\index{Sequence@{Sequence}!setSecondIntegral@{setSecondIntegral}}
+\index{setSecondIntegral@{setSecondIntegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{setSecondIntegral()}{setSecondIntegral()}}
+{\footnotesize\ttfamily Sequence\+::set\+Second\+Integral (\begin{DoxyParamCaption}\item[{double}]{second\+Integral }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawia wartość drugiej całki. 
+
+Ustawia wartość drugiej całki.
+
+Metoda {\ttfamily set\+Second\+Integral} ustawia wartość drugiej całki dla danego ciągu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em second\+Integral} & Wartość drugiej całki.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sequence_a086be6a2225abf39f8bb5c0f516bc63e}\label{class_sequence_a086be6a2225abf39f8bb5c0f516bc63e}} 
+\index{Sequence@{Sequence}!Zintegral@{Zintegral}}
+\index{Zintegral@{Zintegral}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{Zintegral()}{Zintegral()}}
+{\footnotesize\ttfamily Sequence\+::\+Zintegral (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{int}]{n,  }\item[{std\+::function$<$ double(double)$>$}]{f }\end{DoxyParamCaption})}
+
+
+
+Funkcja oblicza skomplikowaną całkę. 
+
+Wzór na całkę jest następujący\+:  \[
+  \int_a^b f(x)\,dx \approx \frac{b-a}{n} \sum_{i=1}^n f\left(a + (b-a) \cdot \frac{i-1}{n}\right)
+\]
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sequence.\+h\item 
+Sequence.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{class_statistics}{}\doxysection{Statistics Class Reference}
+\label{class_statistics}\index{Statistics@{Statistics}}
+
+
+Klasa {\ttfamily \mbox{\hyperlink{class_statistics}{Statistics}}} zawiera metody do obliczania poszczególnych wskaźników rozkładu Studenta.  
+
+
+
+
+{\ttfamily \#include $<$Statistics.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_statistics_a60ddd90a571ed4c3ce8c0f6317a36d63}\label{class_statistics_a60ddd90a571ed4c3ce8c0f6317a36d63}} 
+{\bfseries Statistics} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistics_aacba331fcc5892bf27cddf1552c59c69}{Statistics}} (const \mbox{\hyperlink{class_statistics}{Statistics}} \&other)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistics_ab68ede75479e44d5c35b78ec1284065b}{$\sim$\+Statistics}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_statistics_ae53f094df50e52dcfa3ad0144d10a0e5}{t\+Distribution}} (double t, double v)
+\begin{DoxyCompactList}\small\item\em Funkcja oblicza gęstość prawdopodobieństwa rozkładu studenta. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_statistics_acda025b77b7af29ad8d8c4356ab82f33}{t\+Distribution\+Cumulative}} (double t, double v)
+\begin{DoxyCompactList}\small\item\em Funkcja oblicza dystrybuantę rozkładu studenta. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_statistics_a9a9b0eb5a53e148110dc03d830eace9f}{t\+Distribution\+Entropy}} (double v)
+\begin{DoxyCompactList}\small\item\em Funkcja oblicza entropię rozkładu studenta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa {\ttfamily \mbox{\hyperlink{class_statistics}{Statistics}}} zawiera metody do obliczania poszczególnych wskaźników rozkładu Studenta. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_statistics_aacba331fcc5892bf27cddf1552c59c69}\label{class_statistics_aacba331fcc5892bf27cddf1552c59c69}} 
+\index{Statistics@{Statistics}!Statistics@{Statistics}}
+\index{Statistics@{Statistics}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{Statistics()}{Statistics()}}
+{\footnotesize\ttfamily Statistics\+::\+Statistics (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_statistics}{Statistics}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Konstruktor kopiujący. 
+
+Tworzy nową sekwencję, która jest kopią podanej sekwencji. \mbox{\Hypertarget{class_statistics_ab68ede75479e44d5c35b78ec1284065b}\label{class_statistics_ab68ede75479e44d5c35b78ec1284065b}} 
+\index{Statistics@{Statistics}!````~Statistics@{$\sim$Statistics}}
+\index{````~Statistics@{$\sim$Statistics}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{$\sim$Statistics()}{~Statistics()}}
+{\footnotesize\ttfamily Statistics\+::$\sim$\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+Usuwa sekwencję i zwalnia pamięć. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_statistics_ae53f094df50e52dcfa3ad0144d10a0e5}\label{class_statistics_ae53f094df50e52dcfa3ad0144d10a0e5}} 
+\index{Statistics@{Statistics}!tDistribution@{tDistribution}}
+\index{tDistribution@{tDistribution}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{tDistribution()}{tDistribution()}}
+{\footnotesize\ttfamily Statistics\+::t\+Distribution (\begin{DoxyParamCaption}\item[{double}]{t,  }\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja oblicza gęstość prawdopodobieństwa rozkładu studenta. 
+
+Funkcja oblicza gęstość prawdopodobieństwa rozkładu Studenta. 
+\begin{DoxyParams}{Parameters}
+{\em t} & Zmienna t. \\
+\hline
+{\em v} & Liczba stopni swobody. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość gęstości prawdopodobieństwa.
+\end{DoxyReturn}
+Wzór na gęstość prawdopodobieństwa rozkładu Studenta\+:  \[
+f(t) = \frac{\Gamma(\frac{v + 1}{2})}{\sqrt{v\pi}\Gamma(\frac{v}{2})} \left(1 + \frac{t^2}{v}\right)^{-\frac{v + 1}{2}}
+\] gdzie $\Gamma$ oznacza funkcję gamma.\mbox{\Hypertarget{class_statistics_acda025b77b7af29ad8d8c4356ab82f33}\label{class_statistics_acda025b77b7af29ad8d8c4356ab82f33}} 
+\index{Statistics@{Statistics}!tDistributionCumulative@{tDistributionCumulative}}
+\index{tDistributionCumulative@{tDistributionCumulative}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{tDistributionCumulative()}{tDistributionCumulative()}}
+{\footnotesize\ttfamily Statistics\+::t\+Distribution\+Cumulative (\begin{DoxyParamCaption}\item[{double}]{t,  }\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja oblicza dystrybuantę rozkładu studenta. 
+
+Funkcja oblicza dystrybuantę rozkładu Studenta. 
+\begin{DoxyParams}{Parameters}
+{\em t} & Zmienna t. \\
+\hline
+{\em v} & Liczba stopni swobody. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość dystrybuanty.
+\end{DoxyReturn}
+Wzór na dystrybuantę rozkładu Studenta\+:  \[
+  F(t) = \int_{-\infty}^{t} f(x) dx = \frac{\beta(\frac{v}{2},\frac{1}{2})}{2}
+  \] gdzie $\beta$ oznacza funkcję beta. Formuła na entropię rozkładu studenta\+: c\mbox{\Hypertarget{class_statistics_a9a9b0eb5a53e148110dc03d830eace9f}\label{class_statistics_a9a9b0eb5a53e148110dc03d830eace9f}} 
+\index{Statistics@{Statistics}!tDistributionEntropy@{tDistributionEntropy}}
+\index{tDistributionEntropy@{tDistributionEntropy}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{tDistributionEntropy()}{tDistributionEntropy()}}
+{\footnotesize\ttfamily Statistics\+::t\+Distribution\+Entropy (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja oblicza entropię rozkładu studenta. 
+
+Funkcja oblicza entropię rozkładu studenta. 
+\begin{DoxyParams}{Parameters}
+{\em v} & Liczba stopni swobody. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość entropii.
+\end{DoxyReturn}
+Wzór na entropię rozkładu studenta\+:  \[
+H(X) = \frac{v + 1}{2} + \ln(\sqrt{v\pi}) + \ln(\Gamma(\frac{v}{2}))
+\]
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Statistics.\+h\item 
+Statistics.\+cpp\end{DoxyCompactItemize}
